@@ -15,14 +15,15 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ParkSearch from './ParkSearch.js';
-import ParkInfo from './ParkInfo.js';
-import HomePage from './HomePage.js';
-import ParkPlan from './ParkPlan.js';
-import Navbar from './GlobalComponents/Navbar.jsx';
-import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from './GlobalComponents/Footer.jsx';
+import Navbar from './GlobalComponents/Navbar.jsx';
+import HomePage from './HomePage.js';
+import ParkInfo from './ParkInfo.js';
+import ParkPlan from './ParkPlan.js';
+import ParkSearch from './ParkSearch.js';
 import './Style/main.css';
+import TempleTwitter from './TempleTwitter.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,11 +35,12 @@ root.render(
                 <Route path="/ParkSearch" element={<ParkSearch />} />
                 <Route path="/ParkInfo" element={<ParkInfo />} />
                 <Route path="/ParkPlan" element={<ParkPlan />} />
+                <Route path="/test" element={<div>Test Route</div>} />
+                <Route path="/TempleTwitter" element={<TempleTwitter />} />
             </Routes>
             <Footer></Footer>
         </Router>
 
-      
     </div>
 );
 
