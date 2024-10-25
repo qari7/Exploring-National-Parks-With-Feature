@@ -26,6 +26,7 @@ import './Style/main.css';
 import TempleTwitter from './TempleTwitter.js';
 import AboutPage from './aboutPage.js';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <div>
@@ -40,7 +41,7 @@ root.render(
                 <Route path="/TempleTwitter" element={<TempleTwitter />} />
                 <Route path="/AboutPage" element={<AboutPage />} />
 
-                
+
             </Routes>
             <Footer></Footer>
         </Router>
