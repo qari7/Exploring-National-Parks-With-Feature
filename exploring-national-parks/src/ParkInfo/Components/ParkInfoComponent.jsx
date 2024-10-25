@@ -7,9 +7,10 @@
  * @returns {JSX.Element} The rendered ParkInfoComponent component.
  */
 // ParkInfoComponent.jsx
-import React, { useState, useEffect } from 'react';
-import { ParkInfo } from '../Functionality/ParkInfo'; // Importing the functionality
+import React, { useEffect, useState } from 'react';
 import '../../Style/parkInfo.css';
+import { ParkInfo } from '../Functionality/ParkInfo'; // Importing the functionality
+import ParkMap from './ParkMap';
 import ParkVideos from './ParkVideos';
 
 function ParkInfoComponent() {
@@ -51,7 +52,7 @@ function ParkInfoComponent() {
         return (
             <div className="top-padding-info">
                 <div className='all-parks-info-welcome'>
-                       <center>
+                       <center> 
                             <h1 id="park-info-title">Park Information Page</h1>
                             <h2>Browse through all the US National Parks!</h2>
                         </center>
@@ -130,16 +131,21 @@ function ParkInfoComponent() {
                                         <a href={'./ParkPlan?parkCode='+park.parkCode}><button className="park-info-button">Plan A Trip</button></a>
                                     </div>
                                 </div>
-                            </center>
 
+                                <div className='park-map'>
+                                    <h2>Park Location</h2>
+                                    <ParkMap 
+                                        latitude={park.latitude} 
+                                        longitude={park.longitude} 
+                                    />
+                                </div>
+                            </center>
                             <br></br>
-                            
+                    
                             <div className='activities-list'>
                                 {park.activities?.map((activity) =>(<>
                                 <div className='activity'><p key={activity.id}>{activity.name}</p></div></>))}
-                            </div>
-
-                            
+                            </div> 
                             
                         </div>
                         </>
