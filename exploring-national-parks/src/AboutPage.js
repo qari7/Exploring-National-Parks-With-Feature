@@ -6,7 +6,7 @@
  */
 
 import React from 'react'
-import './Style/aboutPage.css'
+import './Style/AboutPage.css'
 
 const AboutPage = () => {
     return (
