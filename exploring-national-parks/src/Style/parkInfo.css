@@ -155,3 +155,12 @@ img{
     background: linear-gradient(to bottom, rgba(255,255,255,0.5) 100%, rgba(255,255,255,1) 0%);
 }
 
+.park-map {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  
+  .park-map h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
