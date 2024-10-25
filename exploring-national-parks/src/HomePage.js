@@ -15,7 +15,6 @@ const HomePage = () => {
     // <Navbar/>
     <div className = "home-page main-component">
         {/* <h1>Test Hello</h1> */}
-        <Welcome/>
         <HighlightGallery/>
         <Buttons/>
     </div>
