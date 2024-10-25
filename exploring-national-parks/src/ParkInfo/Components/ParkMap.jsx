@@ -13,7 +13,7 @@ const ParkMap = ({ latitude, longitude }) => {
   };
 
   return (
-    //<LoadScript googleMapsApiKey="AIzaSyBKMLhQGT462H0-TJjSeyrO-YV3hPCUpIY">
+    //<LoadScript googleMapsApiKey="API_KEY">
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={10}
