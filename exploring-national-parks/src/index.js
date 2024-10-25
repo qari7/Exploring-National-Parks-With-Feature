@@ -16,6 +16,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import AboutPage from './AboutPage.js';
 import Footer from './GlobalComponents/Footer.jsx';
 import Navbar from './GlobalComponents/Navbar.jsx';
 import HomePage from './HomePage.js';
@@ -24,7 +25,6 @@ import ParkPlan from './ParkPlan.js';
 import ParkSearch from './ParkSearch.js';
 import './Style/main.css';
 import TempleTwitter from './TempleTwitter.js';
-import AboutPage from './aboutPage.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

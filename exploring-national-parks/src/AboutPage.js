@@ -5,8 +5,8 @@
  * @returns {JSX.Element} The rendered home page component.
  */
 
-import React from 'react'
-import './Style/AboutPage.css'
+import React from 'react';
+import './Style/aboutPage.css';
 
 const AboutPage = () => {
     return (
