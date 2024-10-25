@@ -24,6 +24,9 @@ import ParkPlan from './ParkPlan.js';
 import ParkSearch from './ParkSearch.js';
 import './Style/main.css';
 import TempleTwitter from './TempleTwitter.js';
+import AboutPage from './aboutPage.js';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +40,8 @@ root.render(
                 <Route path="/ParkPlan" element={<ParkPlan />} />
                 <Route path="/test" element={<div>Test Route</div>} />
                 <Route path="/TempleTwitter" element={<TempleTwitter />} />
+                <Route path="/AboutPage" element={<AboutPage />} />
+
             </Routes>
             <Footer></Footer>
         </Router>

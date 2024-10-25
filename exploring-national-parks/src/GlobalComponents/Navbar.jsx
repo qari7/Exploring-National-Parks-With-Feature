@@ -35,6 +35,9 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/TempleTwitter">Temple Alert Twitter</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/AboutPage">About</NavLink>
+                </li>
             </ul>
         </nav>
     )
