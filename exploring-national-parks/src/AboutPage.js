@@ -5,8 +5,8 @@
  * @returns {JSX.Element} The rendered home page component.
  */
 
-import React from 'react'
-import './Style/aboutPage.css'
+import React from 'react';
+import './Style/aboutPage.css';
 
 const AboutPage = () => {
     return (
@@ -26,5 +26,5 @@ const AboutPage = () => {
         </div>
     );
 }
-export default AboutPage
 
+export default AboutPage

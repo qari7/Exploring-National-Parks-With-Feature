@@ -40,7 +40,7 @@ root.render(
                 <Route path="/TempleTwitter" element={<TempleTwitter />} />
                 <Route path="/AboutPage" element={<AboutPage />} />
 
-                
+
             </Routes>
             <Footer></Footer>
         </Router>
